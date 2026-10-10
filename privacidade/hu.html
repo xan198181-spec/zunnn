@@ -1,0 +1,55 @@
+<!doctype html><html lang="hu" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>A ZUNNN ADATVÉDELMI IRÁNYELVEI</title><style>body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0b1214;color:#e8f0f0}main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+a{color:#4fd8cc}h1{font-size:28px}h2{font-size:18px;margin-top:28px;color:#4fd8cc}li{margin:6px 0}.nav{font-size:14px;margin-bottom:24px}.nav a{margin-right:8px;white-space:nowrap}
+footer{margin-top:40px;font-size:13px;color:#8aa}</style></head><body><main><div class="nav"><a href="pt.html">Português</a> <a href="en.html">English</a> <a href="es.html">Español</a> <a href="fr.html">Français</a> <a href="de.html">Deutsch</a> <a href="it.html">Italiano</a> <a href="nl.html">Nederlands</a> <a href="pl.html">Polski</a> <a href="ro.html">Română</a> <a href="ru.html">Русский</a> <a href="uk.html">Українська</a> <a href="bg.html">Български</a> <a href="cs.html">Čeština</a> <a href="sk.html">Slovenčina</a> <a href="hu.html">Magyar</a> <a href="da.html">Dansk</a> <a href="nb.html">Norsk</a> <a href="sv.html">Svenska</a> <a href="fi.html">Suomi</a> <a href="el.html">Ελληνικά</a> <a href="tr.html">Türkçe</a> <a href="ar.html">العربية</a> <a href="fa.html">فارسی</a> <a href="ur.html">اردو</a> <a href="iw.html">עברית</a> <a href="hi.html">हिन्दी</a> <a href="bn.html">বাংলা</a> <a href="th.html">ไทย</a> <a href="vi.html">Tiếng Việt</a> <a href="in.html">Bahasa Indonesia</a> <a href="ms.html">Bahasa Melayu</a> <a href="fil.html">Filipino</a> <a href="sw.html">Kiswahili</a> <a href="ja.html">日本語</a> <a href="ko.html">한국어</a> <a href="zh-rCN.html">简体中文</a></div><h1>A ZUNNN ADATVÉDELMI IRÁNYELVEI</h1><p>v1.0 · 2026-10-10</p>
+<p>Összefoglaló: A Zunnnnak nincs fiókja, nem kér telefonszámot vagy e-mail-címet, és nincs saját szervere. A beszélgetéseid az eszközödön maradnak.</p>
+<h2>1. Ami csak a telefonodon marad</h2>
+<ul>
+<li>A beszélgetéseid, a névjegyeid, a beszélgetések hangjai és az identitáskulcsaid TITKOSÍTVA vannak tárolva az eszközön (az Android által védett kulccsal).</li>
+<li>A „A napom&quot; videói és a névjegyfotók az alkalmazás privát mappájában vannak, amelyet az Android véd (más alkalmazások nem olvashatják), de a Zunnn NEM végez rajtuk további titkosítást.</li>
+<li>Ezek közül semmi sem kerül hozzánk. Semmihez sem férünk hozzá.</li>
+</ul>
+<h2>2. Ami elhagyja a telefonodat, és hová megy</h2>
+<ul>
+<li>Az üzenetek, a kapcsolatfelvételi kérések, a hívásértesítések és a „A napom&quot; értesítései végpontok közötti titkosítással utaznak. Az interneten nyilvános „relay&quot;-eken (a Nostr protokoll harmadik felek által üzemeltetett szerverein, például nos.lol és relay.primal.net) haladnak át. A tartalmat nem tudják elolvasni, de látják, hogy az egyik kulcs beszélt a másikkal, és mikor. Bluetoothon csak a közelben lévők vesznek részt.</li>
+<li>A hang- és videóhívások, valamint a „A napom&quot; videója közvetlenül az egyik telefonról a másikra megy (WebRTC). Az útvonal megtalálásához a Google nyilvános STUN-szervereit használjuk, amelyek látják az IP-címedet.</li>
+<li>Időjárás, Hold, Nap, Égbolt: az alkalmazás harmadik felek nyilvános szolgáltatásait kérdezi le (MET Norway, NOAA, NASA, USGS), és az időjáráshoz és az előrejelzéshez elküldi a hozzávetőleges tartózkodási helyedet. Nekik saját irányelveik vannak.</li>
+<li>Csoportok: minden csoportüzenetet titkosítva, külön-külön küldünk el minden tagnak a relék (átjátszók) útján. A tagok látják egymás nevét; a tagok listáját, a nevet és a borítóképet csak az adminisztrátor határozza meg.</li>
+<li>Meghívók: az alkalmazás megnyitásakor ellenőrzi, hogy a kimásolt szöveg tartalmaz-e Zunnn-meghívót, és ha igen, megkérdezi, hozzá akarod-e adni az illetőt. Amit kimásolsz, azt nem tároljuk és nem küldjük el.</li>
+<li>Ideiglenes kód: ha kódot hozol létre, hogy valaki távolról megtaláljon, a reléken 15 percre közzétesszük a kulcsodat tartalmazó titkosított értesítést egy eldobható kulcs alatt. Csak az olvashatja el, aki ismeri a kódot.</li>
+<li>Helyadat: csak az eszközön használjuk a radarhoz, az iránytűhöz, az Égbolthoz és az időjáráshoz; névjeggyel csak akkor osztjuk meg, ha szándékosan elküldöd.</li>
+<li>Vásárlások: a Zunnn Plus a Google Playen keresztül vásárolható és fizethető. A Zunnn nem kap és nem tárol fizetési adatot; csak a Google-nél ellenőrzi, hogy a vásárlás létezik-e.</li>
+</ul>
+<h2>3. Engedélyek és miért kellenek</h2>
+<ul>
+<li>Bluetooth: beszélgetés a közeli telefonokkal.</li>
+<li>Helyadat: iránytű, radar, időjárás, Égbolt.</li>
+<li>Mikrofon: hangüzenetek és hívások.</li>
+<li>Kamera: QR-kódok olvasása és videóhívások.</li>
+<li>Értesítések és háttérszolgáltatás: üzenetek és hívások jelzése zárt alkalmazás mellett (kikapcsolható a „Személyazonosság&quot; részben).</li>
+<li>Fotók/videók: csak amit a „A napom&quot; számára kiválasztasz.</li>
+</ul>
+<h2>4. Amit nem csinálunk</h2>
+<ul>
+<li>Nem adunk el adatot, nincs reklám, nem használunk követőket, és nem olvassuk a beszélgetéseidet.</li>
+</ul>
+<h2>5. Az általad kezelhető beállítások</h2>
+<ul>
+<li>Biztonsági mentés: a beszélgetéseket titkosított fájlba exportálod, saját jelszóval.</li>
+<li>Törlés: a „Az összes adatom törlése&quot; („Személyazonosság&quot;) mindent eltávolít az eszközről. A már másoknak kézbesített üzenetek náluk maradnak.</li>
+<li>Letiltás és jelentés: minden beszélgetés menüjében.</li>
+<li>Ha az app hiba miatt bezárul, jelentést mutat (az app verziója, az eszköz modellje és az ok). A jelentés csak az eszközön marad, és csak akkor hagyja el, ha a Megosztás gombra koppintasz.</li>
+<li>Az útvonal GPX-be exportálása csak a gomb megérintésekor történik; a fájl az általad választott alkalmazásba kerül, és az útvonal GPS-pontjait tartalmazza.</li>
+</ul>
+<h2>6. Gyerekek</h2>
+<ul>
+<li>Az alkalmazás nem 13 év alatti gyerekeknek szól.</li>
+</ul>
+<h2>7. Korlátok, őszintén</h2>
+<ul>
+<li>A nyilvános relay-ek leállhatnak vagy üzeneteket dobhatnak el. A hívások és a „A napom&quot; egyes mobilhálózatokon nem biztos, hogy csatlakoznak.</li>
+<li>A biztonsági kód segít bizonyítani, hogy senki sincs a beszélgetés közepén; csak akkor számít, ha tényleg összeveted a másik személlyel.</li>
+</ul>
+<h2>8. Kapcsolat</h2>
+<ul>
+<li>Adatkezelő: 51.087.337 Alexandre Matos da Silva, CNPJ (Brazília) 51.087.337/0001-19. Kérdések, valamint hozzáférési, helyesbítési vagy törlési kérelmek: zunnn@mestredasvelas.com.br.</li>
+</ul></main></body></html>

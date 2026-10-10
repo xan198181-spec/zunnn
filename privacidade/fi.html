@@ -1,0 +1,55 @@
+<!doctype html><html lang="fi" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ZUNNNIN TIETOSUOJAKÄYTÄNTÖ</title><style>body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0b1214;color:#e8f0f0}main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+a{color:#4fd8cc}h1{font-size:28px}h2{font-size:18px;margin-top:28px;color:#4fd8cc}li{margin:6px 0}.nav{font-size:14px;margin-bottom:24px}.nav a{margin-right:8px;white-space:nowrap}
+footer{margin-top:40px;font-size:13px;color:#8aa}</style></head><body><main><div class="nav"><a href="pt.html">Português</a> <a href="en.html">English</a> <a href="es.html">Español</a> <a href="fr.html">Français</a> <a href="de.html">Deutsch</a> <a href="it.html">Italiano</a> <a href="nl.html">Nederlands</a> <a href="pl.html">Polski</a> <a href="ro.html">Română</a> <a href="ru.html">Русский</a> <a href="uk.html">Українська</a> <a href="bg.html">Български</a> <a href="cs.html">Čeština</a> <a href="sk.html">Slovenčina</a> <a href="hu.html">Magyar</a> <a href="da.html">Dansk</a> <a href="nb.html">Norsk</a> <a href="sv.html">Svenska</a> <a href="fi.html">Suomi</a> <a href="el.html">Ελληνικά</a> <a href="tr.html">Türkçe</a> <a href="ar.html">العربية</a> <a href="fa.html">فارسی</a> <a href="ur.html">اردو</a> <a href="iw.html">עברית</a> <a href="hi.html">हिन्दी</a> <a href="bn.html">বাংলা</a> <a href="th.html">ไทย</a> <a href="vi.html">Tiếng Việt</a> <a href="in.html">Bahasa Indonesia</a> <a href="ms.html">Bahasa Melayu</a> <a href="fil.html">Filipino</a> <a href="sw.html">Kiswahili</a> <a href="ja.html">日本語</a> <a href="ko.html">한국어</a> <a href="zh-rCN.html">简体中文</a></div><h1>ZUNNNIN TIETOSUOJAKÄYTÄNTÖ</h1><p>v1.0 · 2026-10-10</p>
+<p>Yhteenveto: Zunnnissa ei ole tiliä, se ei pyydä puhelinnumeroa tai sähköpostia eikä sillä ole omaa palvelinta. Keskustelusi pysyvät laitteellasi.</p>
+<h2>1. Mikä pysyy vain puhelimessasi</h2>
+<ul>
+<li>Keskustelusi, yhteystietosi, keskustelujen äänet ja identiteettiavaimesi tallennetaan laitteelle SALATTUINA (Androidin suojaamalla avaimella).</li>
+<li>&quot;Oma päiväni&quot;-videot ja yhteystietojen kuvat ovat sovelluksen yksityisessä kansiossa, jota Android suojaa (muut sovellukset eivät voi lukea niitä), mutta ILMAN Zunnnin tekemää lisäsalausta.</li>
+<li>Mitään tästä ei lähetetä meille. Meillä ei ole pääsyä mihinkään siitä.</li>
+</ul>
+<h2>2. Mikä poistuu puhelimestasi ja minne se menee</h2>
+<ul>
+<li>Viestit, yhteyspyynnöt, puheluilmoitukset ja &quot;Oma päiväni&quot;-ilmoitukset kulkevat päästä päähän salattuina. Internetissä ne kulkevat julkisten &quot;releiden&quot; (Nostr-protokollan kolmansien osapuolten palvelimet, kuten nos.lol ja relay.primal.net) kautta. Ne eivät voi lukea sisältöä, mutta näkevät, että yksi avain puhui toisen kanssa ja milloin. Bluetoothilla mukana ovat vain lähellä olevat.</li>
+<li>Ääni- ja videopuhelut sekä &quot;Oma päiväni&quot;-video kulkevat suoraan puhelimesta toiseen (WebRTC). Reitin löytämiseen käytämme Googlen julkisia STUN-palvelimia, jotka näkevät IP-osoitteesi.</li>
+<li>Sää, Kuu, Aurinko, Taivas: sovellus kysyy kolmansien osapuolten julkisilta palveluilta (MET Norway, NOAA, NASA, USGS) ja lähettää likimääräisen sijaintisi säätä ja ennustetta varten. Niillä on omat käytäntönsä.</li>
+<li>Ryhmät: jokainen ryhmäviesti lähetetään salattuna erikseen jokaiselle jäsenelle releiden kautta. Jäsenet näkevät toistensa nimet; vain ylläpitäjä määrää jäsenluettelon, nimen ja kansikuvan.</li>
+<li>Kutsut: kun sovellus avataan, se tarkistaa, sisältääkö kopioimasi teksti Zunnn-kutsun, ja kysyy sellaisen löytyessä, haluatko lisätä henkilön. Kopioimaasi ei tallenneta eikä lähetetä.</li>
+<li>Väliaikainen koodi: jos luot koodin, jotta joku löytää sinut kaukaa, releille julkaistaan 15 minuutiksi salattu ilmoitus avaimestasi kertakäyttöisen avaimen alla. Vain koodin tunteva voi lukea sen.</li>
+<li>Sijainti: käytetään vain laitteella tutkaan, kompassiin, Taivaaseen ja säähän; se jaetaan yhteystiedolle vain, jos lähetät sen tarkoituksella.</li>
+<li>Ostokset: Zunnn Plus ostetaan ja maksetaan Google Playn kautta. Zunnn ei vastaanota eikä tallenna maksutietoja; se vain tarkistaa Googlelta, että ostos on olemassa.</li>
+</ul>
+<h2>3. Käyttöoikeudet ja miksi</h2>
+<ul>
+<li>Bluetooth: puhua lähellä olevien puhelimien kanssa.</li>
+<li>Sijainti: kompassi, tutka, sää, Taivas.</li>
+<li>Mikrofoni: ääniviestit ja puhelut.</li>
+<li>Kamera: QR-koodien lukeminen ja videopuhelut.</li>
+<li>Ilmoitukset ja taustapalvelu: ilmoittaa viesteistä ja puheluista sovelluksen ollessa suljettuna (voi poistaa käytöstä kohdassa &quot;Identiteetti&quot;).</li>
+<li>Kuvat/videot: vain ne, jotka valitset &quot;Oma päiväni&quot;-toimintoon.</li>
+</ul>
+<h2>4. Mitä emme tee</h2>
+<ul>
+<li>Emme myy tietoja, meillä ei ole mainoksia, emme käytä seuraimia emmekä lue keskustelujasi.</li>
+</ul>
+<h2>5. Omat hallintasi</h2>
+<ul>
+<li>Varmuuskopio: viet keskustelut salattuun tiedostoon omalla salasanallasi.</li>
+<li>Poistaminen: &quot;Poista kaikki tietoni&quot; (&quot;Identiteetti&quot;) poistaa kaiken laitteelta. Viestit, jotka on jo toimitettu muille, jäävät heille.</li>
+<li>Estäminen ja ilmoittaminen: jokaisen keskustelun valikossa.</li>
+<li>Jos sovellus sulkeutuu virheen vuoksi, se näyttää raportin (sovelluksen versio, laitemalli ja syy). Raportti pysyy vain laitteella ja poistuu vain, jos napautat Jaa.</li>
+<li>Reitin vienti GPX-muotoon tapahtuu vain, kun napautat painiketta; tiedosto menee valitsemaasi sovellukseen ja sisältää reitin GPS-pisteet.</li>
+</ul>
+<h2>6. Lapset</h2>
+<ul>
+<li>Sovellusta ei ole tarkoitettu alle 13-vuotiaille lapsille.</li>
+</ul>
+<h2>7. Rajoitukset, rehellisesti</h2>
+<ul>
+<li>Julkiset releet voivat kaatua tai pudottaa viestejä. Puhelut ja &quot;Oma päiväni&quot; eivät välttämättä yhdisty joissakin matkapuhelinverkoissa.</li>
+<li>Turvakoodi auttaa todistamaan, ettei kukaan ole keskustelun välissä; se on merkityksellinen vain, jos vertaat sitä oikeasti toiseen ihmiseen.</li>
+</ul>
+<h2>8. Yhteystiedot</h2>
+<ul>
+<li>Rekisterinpitäjä: 51.087.337 Alexandre Matos da Silva, CNPJ (Brasilia) 51.087.337/0001-19. Kysymykset sekä pyynnöt tietojen saamiseksi, oikaisemiseksi tai poistamiseksi: zunnn@mestredasvelas.com.br.</li>
+</ul></main></body></html>

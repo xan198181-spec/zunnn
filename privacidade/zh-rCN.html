@@ -1,0 +1,55 @@
+<!doctype html><html lang="zh-CN" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ZUNNN 隐私政策</title><style>body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0b1214;color:#e8f0f0}main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+a{color:#4fd8cc}h1{font-size:28px}h2{font-size:18px;margin-top:28px;color:#4fd8cc}li{margin:6px 0}.nav{font-size:14px;margin-bottom:24px}.nav a{margin-right:8px;white-space:nowrap}
+footer{margin-top:40px;font-size:13px;color:#8aa}</style></head><body><main><div class="nav"><a href="pt.html">Português</a> <a href="en.html">English</a> <a href="es.html">Español</a> <a href="fr.html">Français</a> <a href="de.html">Deutsch</a> <a href="it.html">Italiano</a> <a href="nl.html">Nederlands</a> <a href="pl.html">Polski</a> <a href="ro.html">Română</a> <a href="ru.html">Русский</a> <a href="uk.html">Українська</a> <a href="bg.html">Български</a> <a href="cs.html">Čeština</a> <a href="sk.html">Slovenčina</a> <a href="hu.html">Magyar</a> <a href="da.html">Dansk</a> <a href="nb.html">Norsk</a> <a href="sv.html">Svenska</a> <a href="fi.html">Suomi</a> <a href="el.html">Ελληνικά</a> <a href="tr.html">Türkçe</a> <a href="ar.html">العربية</a> <a href="fa.html">فارسی</a> <a href="ur.html">اردو</a> <a href="iw.html">עברית</a> <a href="hi.html">हिन्दी</a> <a href="bn.html">বাংলা</a> <a href="th.html">ไทย</a> <a href="vi.html">Tiếng Việt</a> <a href="in.html">Bahasa Indonesia</a> <a href="ms.html">Bahasa Melayu</a> <a href="fil.html">Filipino</a> <a href="sw.html">Kiswahili</a> <a href="ja.html">日本語</a> <a href="ko.html">한국어</a> <a href="zh-rCN.html">简体中文</a></div><h1>ZUNNN 隐私政策</h1><p>v1.0 · 2026-10-10</p>
+<p>概要：Zunnn 没有账号，不要求提供手机号或电子邮件，也没有自己的服务器。你的对话保存在你的设备上。</p>
+<h2>1. 只保存在你手机上的内容</h2>
+<ul>
+<li>你的对话、联系人、对话中的语音和身份密钥会以加密方式保存在设备上（密钥由 Android 保护）。</li>
+<li>“我的一天”的视频和联系人照片保存在应用的私有文件夹中，受 Android 保护（其他应用无法读取），但 Zunnn 没有做额外加密。</li>
+<li>这些内容都不会发送给我们。我们无法访问其中任何内容。</li>
+</ul>
+<h2>2. 离开你手机的内容及去向</h2>
+<ul>
+<li>消息、联系请求、来电通知和“我的一天”通知均采用端到端加密传输。通过互联网时，它们会经过公共“中继”（Nostr 协议的第三方服务器，例如 nos.lol 和 relay.primal.net）。中继无法读取内容，但能看到某个密钥与另一个密钥通信以及通信时间。通过蓝牙时，只有附近的人参与。</li>
+<li>语音和视频通话以及“我的一天”的视频直接在两部手机之间传输（WebRTC）。为了找到路径，我们使用 Google 的公共 STUN 服务器，它们能看到你的 IP 地址。</li>
+<li>天气、月亮、太阳、天空：应用会查询第三方公共服务（MET Norway、NOAA、NASA、USGS），并发送你的大致位置以获取天气和预报。它们有各自的政策。</li>
+<li>群组：每条群消息都会经中继服务器分别加密发送给每位成员。成员能看到彼此的名字；只有管理员能设定成员名单、群名称和群封面。</li>
+<li>邀请：打开应用时，它会检查你复制的文字是否包含 Zunnn 邀请，如果包含，就询问你是否要添加该联系人。你复制的内容不会被保存或发送。</li>
+<li>临时代码：如果你生成代码以便远处的人找到你，一条含有你密钥的加密通知会以一次性密钥发布在中继上，保留 15 分钟。只有知道代码的人才能读取。</li>
+<li>位置：仅在设备上用于雷达、指南针、天空和天气；只有你主动发送时，才会分享给联系人。</li>
+<li>购买：Zunnn Plus 通过 Google Play 购买和扣款。Zunnn 不接收也不保存支付数据，只向 Google 核实购买是否存在。</li>
+</ul>
+<h2>3. 权限及用途</h2>
+<ul>
+<li>蓝牙：与附近的手机通信。</li>
+<li>位置：指南针、雷达、天气、天空。</li>
+<li>麦克风：语音消息和通话。</li>
+<li>相机：扫描二维码和视频通话。</li>
+<li>通知和后台服务：应用关闭时提醒消息和来电（可在“身份”中关闭）。</li>
+<li>照片/视频：仅限你为“我的一天”选择的内容。</li>
+</ul>
+<h2>4. 我们不做的事</h2>
+<ul>
+<li>我们不出售数据，没有广告，不使用跟踪器，也不会阅读你的对话。</li>
+</ul>
+<h2>5. 你的控制权</h2>
+<ul>
+<li>备份：你可以用自己设置的密码将对话导出为加密文件。</li>
+<li>删除：“删除我的所有数据”（“身份”）会清除设备上的所有内容。已送达他人的消息仍保留在对方那里。</li>
+<li>屏蔽和举报：在每个对话的菜单中。</li>
+<li>如果应用因错误而关闭，会显示一份报告（应用版本、设备型号和原因）。报告只保存在设备上，只有你点击“分享”时才会发出。</li>
+<li>轨迹的 GPX 导出只在你点击按钮时进行；文件会交给你选择的应用，并包含轨迹的 GPS 点。</li>
+</ul>
+<h2>6. 儿童</h2>
+<ul>
+<li>本应用不面向 13 岁以下儿童。</li>
+</ul>
+<h2>7. 坦率说明的局限</h2>
+<ul>
+<li>公共中继可能宕机或丢弃消息。在某些移动网络上，通话和“我的一天”可能无法连接。</li>
+<li>安全码有助于证明对话中间没有第三方；只有当你真正与对方当面核对时才有效。</li>
+</ul>
+<h2>8. 联系方式</h2>
+<ul>
+<li>数据负责人：51.087.337 Alexandre Matos da Silva，CNPJ（巴西）51.087.337/0001-19。咨询以及查阅、更正或删除请求：zunnn@mestredasvelas.com.br。</li>
+</ul></main></body></html>

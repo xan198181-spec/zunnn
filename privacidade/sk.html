@@ -1,0 +1,55 @@
+<!doctype html><html lang="sk" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ZÁSADY OCHRANY SÚKROMIA ZUNNN</title><style>body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0b1214;color:#e8f0f0}main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+a{color:#4fd8cc}h1{font-size:28px}h2{font-size:18px;margin-top:28px;color:#4fd8cc}li{margin:6px 0}.nav{font-size:14px;margin-bottom:24px}.nav a{margin-right:8px;white-space:nowrap}
+footer{margin-top:40px;font-size:13px;color:#8aa}</style></head><body><main><div class="nav"><a href="pt.html">Português</a> <a href="en.html">English</a> <a href="es.html">Español</a> <a href="fr.html">Français</a> <a href="de.html">Deutsch</a> <a href="it.html">Italiano</a> <a href="nl.html">Nederlands</a> <a href="pl.html">Polski</a> <a href="ro.html">Română</a> <a href="ru.html">Русский</a> <a href="uk.html">Українська</a> <a href="bg.html">Български</a> <a href="cs.html">Čeština</a> <a href="sk.html">Slovenčina</a> <a href="hu.html">Magyar</a> <a href="da.html">Dansk</a> <a href="nb.html">Norsk</a> <a href="sv.html">Svenska</a> <a href="fi.html">Suomi</a> <a href="el.html">Ελληνικά</a> <a href="tr.html">Türkçe</a> <a href="ar.html">العربية</a> <a href="fa.html">فارسی</a> <a href="ur.html">اردو</a> <a href="iw.html">עברית</a> <a href="hi.html">हिन्दी</a> <a href="bn.html">বাংলা</a> <a href="th.html">ไทย</a> <a href="vi.html">Tiếng Việt</a> <a href="in.html">Bahasa Indonesia</a> <a href="ms.html">Bahasa Melayu</a> <a href="fil.html">Filipino</a> <a href="sw.html">Kiswahili</a> <a href="ja.html">日本語</a> <a href="ko.html">한국어</a> <a href="zh-rCN.html">简体中文</a></div><h1>ZÁSADY OCHRANY SÚKROMIA ZUNNN</h1><p>v1.0 · 2026-10-10</p>
+<p>Zhrnutie: Zunnn nemá účet, nepýta telefónne číslo ani e-mail a nemá vlastný server. Tvoje konverzácie zostávajú na tvojom zariadení.</p>
+<h2>1. Čo zostáva len na tvojom telefóne</h2>
+<ul>
+<li>Tvoje konverzácie, kontakty, zvuky z konverzácií a kľúče identity sa ukladajú do zariadenia ZAŠIFROVANÉ (kľúčom chráneným Androidom).</li>
+<li>Videá z „Môj deň&quot; a fotky kontaktov sú v súkromnom priečinku aplikácie chránenom Androidom (iné aplikácie ich nemôžu čítať), ale BEZ ďalšieho šifrovania zo strany Zunnn.</li>
+<li>Nič z toho sa k nám neodosiela. K ničomu z toho nemáme prístup.</li>
+</ul>
+<h2>2. Čo opúšťa tvoj telefón a kam to ide</h2>
+<ul>
+<li>Správy, žiadosti o kontakt, oznámenia o hovoroch a oznámenia z „Môj deň&quot; putujú end-to-end šifrovane. Cez internet prechádzajú verejnými „relay&quot; (servery tretích strán protokolu Nostr, napríklad nos.lol a relay.primal.net). Obsah neprečítajú, ale vidia, že jeden kľúč hovoril s iným a kedy. Cez Bluetooth sa zúčastňujú len ľudia nablízku.</li>
+<li>Hlasové a video hovory a video z „Môj deň&quot; idú priamo z jedného telefónu do druhého (WebRTC). Na nájdenie cesty používame verejné servery STUN od Googlu, ktoré vidia tvoju IP adresu.</li>
+<li>Počasie, Mesiac, Slnko, Obloha: aplikácia sa pýta verejných služieb tretích strán (MET Norway, NOAA, NASA, USGS) a posiela približnú polohu pre počasie a predpoveď. Majú vlastné zásady.</li>
+<li>Skupiny: každá správa v skupine sa cez relé posiela zašifrovane každému členovi osobitne. Členovia vidia mená ostatných; zoznam členov, názov a úvodnú fotku určuje iba správca.</li>
+<li>Pozvánky: pri otvorení aplikácia skontroluje, či skopírovaný text obsahuje pozvánku Zunnn, a ak áno, opýta sa, či chcete danú osobu pridať. To, čo kopírujete, sa neukladá ani neodosiela.</li>
+<li>Dočasný kód: ak vytvoríte kód, aby vás niekto našiel z diaľky, zverejní sa na relé na 15 minút šifrované oznámenie s vaším kľúčom pod jednorazovým kľúčom. Prečítať ho môže len ten, kto kód pozná.</li>
+<li>Poloha: používa sa len v zariadení pre radar, kompas, Oblohu a počasie; kontaktu sa zdieľa, len keď ju pošleš zámerne.</li>
+<li>Nákupy: Zunnn Plus sa kupuje a platí cez Google Play. Zunnn neprijíma ani neukladá platobné údaje; len u Googlu overuje, že nákup existuje.</li>
+</ul>
+<h2>3. Oprávnenia a prečo ich potrebujeme</h2>
+<ul>
+<li>Bluetooth: komunikácia s telefónmi nablízku.</li>
+<li>Poloha: kompas, radar, počasie, Obloha.</li>
+<li>Mikrofón: hlasové správy a hovory.</li>
+<li>Fotoaparát: čítanie QR kódov a videohovory.</li>
+<li>Oznámenia a služba na pozadí: upozornenie na správy a hovory pri zatvorenej aplikácii (možno vypnúť v „Identita&quot;).</li>
+<li>Fotky/videá: len to, čo vyberieš pre „Môj deň&quot;.</li>
+</ul>
+<h2>4. Čo nerobíme</h2>
+<ul>
+<li>Nepredávame údaje, nemáme reklamy, nepoužívame sledovače a nečítame tvoje konverzácie.</li>
+</ul>
+<h2>5. Tvoje možnosti</h2>
+<ul>
+<li>Záloha: konverzácie exportuješ do zašifrovaného súboru s vlastným heslom.</li>
+<li>Vymazanie: „Vymazať všetky moje dáta&quot; („Identita&quot;) odstráni všetko zo zariadenia. Správy, ktoré už boli doručené iným ľuďom, u nich zostávajú.</li>
+<li>Blokovanie a nahlásenie: v ponuke každej konverzácie.</li>
+<li>Ak sa aplikácia zatvorí kvôli chybe, zobrazí hlásenie (verzia aplikácie, model zariadenia a príčina). Hlásenie zostane len v zariadení a odíde, iba ak ťuknete na Zdieľať.</li>
+<li>Export trasy do GPX prebehne len po ťuknutí na tlačidlo; súbor ide do aplikácie, ktorú vyberiete, a obsahuje GPS body trasy.</li>
+</ul>
+<h2>6. Deti</h2>
+<ul>
+<li>Aplikácia nie je určená deťom do 13 rokov.</li>
+</ul>
+<h2>7. Obmedzenia, úprimne</h2>
+<ul>
+<li>Verejné relay môžu vypadnúť alebo zahodiť správy. Hovory a „Môj deň&quot; sa v niektorých mobilných sieťach nemusia pripojiť.</li>
+<li>Bezpečnostný kód pomáha dokázať, že nikto nie je uprostred konverzácie; platí len vtedy, keď ho naozaj porovnáš s dotyčným.</li>
+</ul>
+<h2>8. Kontakt</h2>
+<ul>
+<li>Prevádzkovateľ údajov: 51.087.337 Alexandre Matos da Silva, CNPJ (Brazília) 51.087.337/0001-19. Otázky a žiadosti o prístup, opravu alebo vymazanie: zunnn@mestredasvelas.com.br.</li>
+</ul></main></body></html>
