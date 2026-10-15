@@ -1,0 +1,9 @@
+<!doctype html><html lang="pt-BR" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Convite Zunnn</title><style>body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0b1214;color:#e8f0f0}main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+a{color:#4fd8cc}h1{font-size:28px}h2{font-size:18px;margin-top:28px;color:#4fd8cc}li{margin:6px 0}.nav{font-size:14px;margin-bottom:24px}.nav a{margin-right:8px;white-space:nowrap}
+footer{margin-top:40px;font-size:13px;color:#8aa}</style></head><body><main><h1>Convite para o Zunnn</h1><p id="who">Alguém te convidou para conversar no Zunnn.</p>
+<p><a id="open" href="#" style="display:inline-block;padding:14px 22px;background:#4fd8cc;color:#06201d;border-radius:12px;font-weight:700;text-decoration:none">Abrir no Zunnn</a></p>
+<p>Ainda não tem o app? Instale o Zunnn e depois toque de novo neste link (ou copie o link e abra o app: ele reconhece o convite).</p>
+<script>(function(){var h=location.hash.slice(1),p=new URLSearchParams(h),k=p.get('k')||'',n=p.get('n')||'';
+if(!/^[0-9a-f]{64}$/i.test(k)){document.getElementById('who').textContent='Convite inválido.';document.getElementById('open').style.display='none';return}
+if(n)document.getElementById('who').textContent=n+' te convidou para conversar no Zunnn.';
+var u='zunnn://add?k='+k+'&n='+encodeURIComponent(n);document.getElementById('open').href=u;setTimeout(function(){location.href=u},300)})()</script></main></body></html>
